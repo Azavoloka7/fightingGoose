@@ -14,24 +14,24 @@ main_display = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Avoid the Enemies!")
 
 # Load images for player animation
-player_images = [pygame.image.load(f"C:/Users/zavol/Documents/zavGame/images/player{i}.png").convert_alpha() for i in range(1, 6)]
+player_images = [pygame.image.load(f"C:/Users/zavol/Documents/fightingGoose/images/player{i}.png").convert_alpha() for i in range(1, 6)]
 current_player_image_index = 0  # Start with the first image
 player_image = player_images[current_player_image_index]
 player_animation_frame_count = 0
 player_animation_speed = 10  # Switch image every 10 frames
 
 # Load other images
-background_image = pygame.image.load("C:/Users/zavol/Documents/zavGame/images/background.png").convert()
-enemy_image = pygame.image.load("C:/Users/zavol/Documents/zavGame/images/enemy.png").convert_alpha()
-bonus_image = pygame.image.load("C:/Users/zavol/Documents/zavGame/images/bonus.png").convert_alpha()
+background_image = pygame.image.load("C:/Users/zavol/Documents/fightingGoose/images/background.png").convert()
+enemy_image = pygame.image.load("C:/Users/zavol/Documents/fightingGoose/images/enemy.png").convert_alpha()
+bonus_image = pygame.image.load("C:/Users/zavol/Documents/fightingGoose/images/bonus.png").convert_alpha()
 
 # Load music
-pygame.mixer.music.load('C:/Users/zavol/Documents/zavGame/sounds/zav_music.mp3')
-game_over_music = 'C:/Users/zavol/Documents/zavGame/sounds/game_over.mp3'
+pygame.mixer.music.load('C:/Users/zavol/Documents/fightingGoose/sounds/zav_music.mp3')
+game_over_music = 'C:/Users/zavol/Documents/fightingGoose/sounds/game_over.mp3'
 pygame.mixer.music.play(-1)
 
 # Load sound effects
-bonus_sound = pygame.mixer.Sound('C:/Users/zavol/Documents/zavGame/sounds/bonus.mp3')
+bonus_sound = pygame.mixer.Sound('C:/Users/zavol/Documents/fightingGoose/sounds/bonus.mp3')
 
 # Player settings
 player_scale = 0.5  # Scale down the player size
